@@ -33,42 +33,42 @@ function setup() {
 function GUI() {
   radiusMaxSlider = createSlider(0, 300, 150, 10);
   radiusMaxSlider.position(10);
-  radiusMaxSlider.size(80);
+  radiusMaxSlider.size(260);
   radiusMaxSlider.input(upDateCanvas);
   maxSliderLabel = createP("Max Radius");
-  maxSliderLabel.position(100, 390);
+  maxSliderLabel.position(300, 390);
 
   radiusMaxSlider.parent("container");
   maxSliderLabel.parent("container");
 
   angleIncSlider = createSlider(0.001, 0.01, 0.005, 0.001);
-  angleIncSlider.position(190, 405);
-  angleIncSlider.size(80);
+  angleIncSlider.position(10, 430);
+  angleIncSlider.size(260);
   angleIncSlider.input(upDateCanvas);
 
   angleIncLabel = createP("Angle Increment");
-  angleIncLabel.position(280, 390);
+  angleIncLabel.position(290, 415);
 
   angleIncSlider.parent("container");
    angleIncLabel.parent("container");
 
   imgColorPicker = createColorPicker(color(255, 0, 0));
-  imgColorPicker.position(10, 440);
-  imgColorPicker.size(80);
+  imgColorPicker.position(10, 460);
+  imgColorPicker.size(260);
   imgColorPicker.input(upDateCanvas);
   imgColorLabel = createP("Image Color");
-  imgColorLabel.position(105, 430)
+  imgColorLabel.position(300, 450)
 
    imgColorPicker.parent("container");
    imgColorLabel.parent("container");
 
 
   bgColorPicker = createColorPicker(color(220));
-  bgColorPicker.position(190, 440);
-  bgColorPicker.size(80);
+  bgColorPicker.position(10, 505);
+  bgColorPicker.size(260);
   bgColorPicker.input(upDateCanvas);
   bgColorLabel = createP(" BG Color");
-  bgColorLabel.position(280, 433);
+  bgColorLabel.position(300, 495);
 
    bgColorPicker.parent("container");
    bgColorLabel.parent("container");
